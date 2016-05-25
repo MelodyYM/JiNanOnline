@@ -34,14 +34,9 @@
     else{
         [[NSUserDefaults standardUserDefaults] setBool:NO forKey:@"firstLaunch"];
         
-        //首页
-//        MainViewController *mainVC = [MainViewController new];
-        
         RootTabBarViewController *centerVC = [RootTabBarViewController new];
         
         LeftViewController *leftVC = [LeftViewController new];
-        
-//        UINavigationController * navigationController = [[UINavigationController alloc] initWithRootViewController:centerVC];
         
         MMDrawerController * drawerController = [[MMDrawerController alloc]initWithCenterViewController:centerVC leftDrawerViewController:leftVC rightDrawerViewController:nil];
         
@@ -50,7 +45,6 @@
         [drawerController setOpenDrawerGestureModeMask:MMOpenDrawerGestureModeAll];
         [drawerController setCloseDrawerGestureModeMask:MMCloseDrawerGestureModeAll];
 
-        
         self.window.rootViewController = drawerController;
     }
     

@@ -42,12 +42,23 @@
 
 }
 
+#pragma mark - 立即体验按钮事件
+
 -(void)loginButtonAction{
     
-    NSLog(@"%s  %d",__func__,__LINE__);
+    RootTabBarViewController *centerVC = [RootTabBarViewController new];
     
-    MainViewController *mainVC = [MainViewController new];
-    [self presentViewController:mainVC animated:YES completion:^{
+    LeftViewController *leftVC = [LeftViewController new];
+    
+    MMDrawerController * drawerController = [[MMDrawerController alloc]initWithCenterViewController:centerVC leftDrawerViewController:leftVC rightDrawerViewController:nil];
+    
+    drawerController.maximumLeftDrawerWidth = kScreenWidth-90;
+    //滑动手势快关抽屉
+    [drawerController setOpenDrawerGestureModeMask:MMOpenDrawerGestureModeAll];
+    [drawerController setCloseDrawerGestureModeMask:MMCloseDrawerGestureModeAll];
+    
+
+    [self presentViewController:drawerController animated:YES completion:^{
         
     }];
 }
