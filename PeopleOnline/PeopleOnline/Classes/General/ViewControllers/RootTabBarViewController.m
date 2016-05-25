@@ -46,7 +46,11 @@
     
     self.viewControllers=array;
     
-    
+    for (UITabBarItem *item in self.tabBar.items) {
+        
+        item.imageInsets = UIEdgeInsetsMake(0, 0, 0,0);
+        
+    }
     
     UIView *v = [[UIView alloc]initWithFrame:CGRectMake(0, 0, kScreenWidth, 49)];
     v.backgroundColor = [UIColor colorWithWhite:0.298 alpha:1.000];
