@@ -7,16 +7,23 @@
 //
 
 #import "HomeViewController.h"
+#import "HomeViewCell.h"
 
-@interface HomeViewController ()
+@interface HomeViewController ()<UITableViewDelegate,UITableViewDataSource>
+
+@property(nonatomic,weak)UITableView *tableView;
 
 @end
 
 @implementation HomeViewController
+static NSString *identifier = @"identifier";
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
 
+    
+    
     self.view.backgroundColor = [UIColor whiteColor];
 
     
@@ -40,6 +47,9 @@
     
     [self.navigationItem setLeftBarButtonItem:back animated:YES];
     
+    [self initTableView];
+    
+    [self.tableView registerClass:[HomeViewCell class] forCellReuseIdentifier:identifier];
 }
 
 
@@ -50,11 +60,36 @@
     //开关左抽屉
     [self.mm_drawerController toggleDrawerSide:MMDrawerSideLeft animated:YES completion:nil];
 }
+// 添加tablView
+-(void)initTableView{
+    
+  UITableView* tableView =[[UITableView alloc]initWithFrame: CGRectMake(0, 0, kScreenWidth, kScreenHeight) style:UITableViewStylePlain];
+    
+    // 设置tableView的代理
+    tableView.delegate = self;
+    tableView.dataSource = self;
+    [self.view addSubview:tableView];
+    _tableView = tableView;
+    
+}
 
 
+// 实现tableView的代理方法
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return 20;
+    
+}
 
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    
+    
+     HomeViewCell *cell =[tableView dequeueReusableCellWithIdentifier:identifier];
 
-
+    
+    return cell;
+    
+}
 
 
 

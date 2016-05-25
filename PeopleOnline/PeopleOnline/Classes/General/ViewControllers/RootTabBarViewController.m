@@ -22,25 +22,25 @@
     
     HomeViewController *homeVC = [HomeViewController new];
     UINavigationController *homeNC = [[UINavigationController alloc]initWithRootViewController:homeVC];
-    homeNC.tabBarItem = [[UITabBarItem alloc]initWithTitle:@"首页" image:[UIImage imageNamed:@""] tag:1];
+    homeNC.tabBarItem = [[UITabBarItem alloc]initWithTitle:@"" image:[UIImage imageNamed:@"bottom1_2"] tag:1];
     
     MyViewController *myVC = [MyViewController new];
     UINavigationController *myNC = [[UINavigationController alloc]initWithRootViewController:myVC];
-     myNC.tabBarItem = [[UITabBarItem alloc]initWithTitle:@"我" image:[UIImage imageNamed:@""] tag:2];
+     myNC.tabBarItem = [[UITabBarItem alloc]initWithTitle:@"" image:[UIImage imageNamed:@"bottom2_2"] tag:2];
     
     CitysViewController *citysVC = [CitysViewController new];
     UINavigationController *citysNC = [[UINavigationController alloc]initWithRootViewController:citysVC];
-     citysNC.tabBarItem = [[UITabBarItem alloc]initWithTitle:@"市民诉求" image:[UIImage imageNamed:@""] tag:3];
+     citysNC.tabBarItem = [[UITabBarItem alloc]initWithTitle:@"" image:[UIImage imageNamed:@"bottom3_2"] tag:3];
     
     BGTViewController *bgtVC = [BGTViewController new];
     UINavigationController *bgtNC = [[UINavigationController alloc]initWithRootViewController:bgtVC];
-     bgtNC.tabBarItem = [[UITabBarItem alloc]initWithTitle:@"曝光台" image:[UIImage imageNamed:@""] tag:4];
+     bgtNC.tabBarItem = [[UITabBarItem alloc]initWithTitle:@"" image:[UIImage imageNamed:@"bottom4_2"] tag:4];
     
     
     
     ServiceViewController *serviceVC = [ServiceViewController new];
     UINavigationController *serviceNC = [[UINavigationController alloc]initWithRootViewController:serviceVC];
-     serviceNC.tabBarItem = [[UITabBarItem alloc]initWithTitle:@"便民服务" image:[UIImage imageNamed:@""] tag:5];
+     serviceNC.tabBarItem = [[UITabBarItem alloc]initWithTitle:@"" image:[UIImage imageNamed:@"bottom6_2"] tag:5];
     
     NSArray *array = @[homeNC,myNC,citysNC,bgtNC,serviceNC];
     
