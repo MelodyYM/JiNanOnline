@@ -18,6 +18,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.view.backgroundColor = [UIColor colorWithWhite:0.298 alpha:1.000];
+    
     HomeViewController *homeVC = [HomeViewController new];
     UINavigationController *homeNC = [[UINavigationController alloc]initWithRootViewController:homeVC];
     homeNC.tabBarItem = [[UITabBarItem alloc]initWithTitle:@"首页" image:[UIImage imageNamed:@""] tag:1];
@@ -43,6 +45,13 @@
     NSArray *array = @[homeNC,myNC,citysNC,bgtNC,serviceNC];
     
     self.viewControllers=array;
+    
+    
+    
+    UIView *v = [[UIView alloc]initWithFrame:CGRectMake(0, 0, kScreenWidth, 49)];
+    v.backgroundColor = [UIColor colorWithWhite:0.298 alpha:1.000];
+    [self.tabBar insertSubview:v atIndex:0];
+    
 }
 
 
