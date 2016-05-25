@@ -24,15 +24,19 @@
 - (void)allViews{
     
     self.imgView =[[UIImageView alloc]initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight)];
-    self.imgView.backgroundColor = [UIColor redColor];
+    self.imgView.backgroundColor = [UIColor greenColor];
     [self.contentView addSubview:_imgView];
     
-    self.label = [[UILabel alloc]initWithFrame:CGRectMake(0, 3, kScreenWidth, 40)];
+    self.label = [[UILabel alloc]initWithFrame:CGRectMake(0, 3, kScreenWidth, 50)];
     self.label.text = @"新闻热线05-25";
     self.label.font =[UIFont boldSystemFontOfSize:22];
+    self.label.textAlignment =UITextAlignmentCenter;
+    
+    
     [self.imgView addSubview:self.label];
     
     
 }
+
 
 @end
