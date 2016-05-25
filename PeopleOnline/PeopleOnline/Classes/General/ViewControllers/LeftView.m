@@ -26,7 +26,7 @@
     CGFloat leftViewW = self.frame.size.width;
     CGFloat leftViewH = self.frame.size.height;
     
-    UIView *bgView = [UIView alloc]initWithFrame:CGRectMake(0, 0, leftViewW, 44);
+//    UIView *bgView = [UIView alloc]initWithFrame:CGRectMake(0, 0, leftViewW, 44);
     
 }
 
