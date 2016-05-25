@@ -7,34 +7,36 @@
 //
 
 #import "LeftViewController.h"
+#import "LeftView.h"
 
 @interface LeftViewController ()
+
+@property(nonatomic,weak)LeftView *leftView;
 
 @end
 
 @implementation LeftViewController
 
+#pragma mark - 加载视图
+
+- (void)loadView{
+    
+    LeftView *leftView = [[LeftView alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    self.view = leftView;
+    _leftView = leftView;
+}
+
+#pragma mark - 视图加载完成
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     
-    self.view.backgroundColor = [UIColor redColor];
-    
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+
+
 
 @end
