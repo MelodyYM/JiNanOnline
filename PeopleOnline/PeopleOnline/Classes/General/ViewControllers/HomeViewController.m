@@ -8,7 +8,7 @@
 
 #import "HomeViewController.h"
 #import "HomeViewCell.h"
-
+#import "HomeThreeViewCell.h"
 @interface HomeViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @property(nonatomic,weak)UITableView *tableView;
@@ -17,7 +17,7 @@
 
 @implementation HomeViewController
 static NSString *identifier = @"identifier";
-
+static NSString *identifierThree = @"identifier1";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -50,6 +50,8 @@ static NSString *identifier = @"identifier";
     [self initTableView];
     
     [self.tableView registerClass:[HomeViewCell class] forCellReuseIdentifier:identifier];
+    [self.tableView registerClass:[HomeThreeViewCell class] forCellReuseIdentifier:identifierThree];
+    
 }
 
 
@@ -76,21 +78,26 @@ static NSString *identifier = @"identifier";
 
 // 实现tableView的代理方法
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 20;
+    return 3;
     
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
+    HomeThreeViewCell *cell =[tableView dequeueReusableCellWithIdentifier:identifierThree];
+        return  cell;
+   
     
     
-     HomeViewCell *cell =[tableView dequeueReusableCellWithIdentifier:identifier];
 
     
     return cell;
     
 }
-
-
-
+// 设置cell的高度
+- (CGFloat)tableView:(UITableView *)atableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    return kScreenHeight/3;
+    
+}
 @end

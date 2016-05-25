@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0BFD25431CF5DB7600142882 /* HomeViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BFD25421CF5DB7600142882 /* HomeViewCell.m */; };
+		0BFD25461CF5E88600142882 /* HomeThreeViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BFD25451CF5E88600142882 /* HomeThreeViewCell.m */; };
 		8C3891991CF5BD1F003ECB4D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C3891981CF5BD1F003ECB4D /* AppDelegate.m */; };
 		8C38919E1CF5BE6D003ECB4D /* LeftView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C38919D1CF5BE6D003ECB4D /* LeftView.m */; };
 		8CBA33B71CF4705E00A4897A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CBA33B61CF4705E00A4897A /* main.m */; };
@@ -58,6 +59,8 @@
 /* Begin PBXFileReference section */
 		0BFD25411CF5DB7600142882 /* HomeViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewCell.h; sourceTree = "<group>"; };
 		0BFD25421CF5DB7600142882 /* HomeViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewCell.m; sourceTree = "<group>"; };
+		0BFD25441CF5E88600142882 /* HomeThreeViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeThreeViewCell.h; sourceTree = "<group>"; };
+		0BFD25451CF5E88600142882 /* HomeThreeViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeThreeViewCell.m; sourceTree = "<group>"; };
 		8C3891971CF5BD1F003ECB4D /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = PeopleOnline/AppDelegate.h; sourceTree = SOURCE_ROOT; };
 		8C3891981CF5BD1F003ECB4D /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = PeopleOnline/AppDelegate.m; sourceTree = SOURCE_ROOT; };
 		8C38919A1CF5BD42003ECB4D /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PrefixHeader.pch; path = PeopleOnline/Classes/PrefixHeader.pch; sourceTree = SOURCE_ROOT; };
@@ -156,6 +159,8 @@
 			children = (
 				0BFD25411CF5DB7600142882 /* HomeViewCell.h */,
 				0BFD25421CF5DB7600142882 /* HomeViewCell.m */,
+				0BFD25441CF5E88600142882 /* HomeThreeViewCell.h */,
+				0BFD25451CF5E88600142882 /* HomeThreeViewCell.m */,
 			);
 			name = "views(首页)";
 			sourceTree = "<group>";
@@ -478,6 +483,7 @@
 				TargetAttributes = {
 					8CBA33B11CF4705E00A4897A = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 93EJ65VTLA;
 					};
 					8CBA33CA1CF4705E00A4897A = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -546,6 +552,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C3891991CF5BD1F003ECB4D /* AppDelegate.m in Sources */,
+				0BFD25461CF5E88600142882 /* HomeThreeViewCell.m in Sources */,
 				8CBA34091CF47F4600A4897A /* UIView+Extension.m in Sources */,
 				8CBA34171CF491A500A4897A /* MainViewController.m in Sources */,
 				8CBA34231CF498D000A4897A /* MMDrawerController.m in Sources */,
@@ -707,8 +714,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PREFIX_HEADER = PeopleOnline/Classes/PrefixHeader.pch;
 				INFOPLIST_FILE = PeopleOnline/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = PeopleOnline.PeopleOnline;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -719,8 +728,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PREFIX_HEADER = PeopleOnline/Classes/PrefixHeader.pch;
 				INFOPLIST_FILE = PeopleOnline/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = PeopleOnline.PeopleOnline;
 				PRODUCT_NAME = "$(TARGET_NAME)";
