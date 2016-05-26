@@ -24,8 +24,10 @@
 
 - (void)allViews{
     
+    CGFloat cellHeight = self.frame.size.height;
+    
     self.imgButton1 =[UIButton buttonWithType:UIButtonTypeSystem];
-    self.imgButton1.frame = CGRectMake(30, 50, 80, 100);
+    self.imgButton1.frame = CGRectMake(50, (cellHeight-100)/2, (kScreenWidth-140)/3, 100);
     [self.imgButton1 setImage:[UIImage imageNamed:@""] forState:UIControlStateNormal];
     self.imgButton1.backgroundColor =[UIColor redColor];
     

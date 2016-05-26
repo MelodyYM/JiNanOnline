@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B4FB5C41CF70B4D00108D20 /* HomeNotifierCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B4FB5C31CF70B4D00108D20 /* HomeNotifierCell.m */; };
 		0BFD25431CF5DB7600142882 /* HomeViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BFD25421CF5DB7600142882 /* HomeViewCell.m */; };
 		0BFD25461CF5E88600142882 /* HomeThreeViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BFD25451CF5E88600142882 /* HomeThreeViewCell.m */; };
 		8C3891991CF5BD1F003ECB4D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C3891981CF5BD1F003ECB4D /* AppDelegate.m */; };
@@ -55,6 +56,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B4FB5C21CF70B4D00108D20 /* HomeNotifierCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeNotifierCell.h; sourceTree = "<group>"; };
+		0B4FB5C31CF70B4D00108D20 /* HomeNotifierCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeNotifierCell.m; sourceTree = "<group>"; };
 		0BFD25411CF5DB7600142882 /* HomeViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewCell.h; sourceTree = "<group>"; };
 		0BFD25421CF5DB7600142882 /* HomeViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewCell.m; sourceTree = "<group>"; };
 		0BFD25441CF5E88600142882 /* HomeThreeViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeThreeViewCell.h; sourceTree = "<group>"; };
@@ -155,6 +158,8 @@
 				0BFD25421CF5DB7600142882 /* HomeViewCell.m */,
 				0BFD25441CF5E88600142882 /* HomeThreeViewCell.h */,
 				0BFD25451CF5E88600142882 /* HomeThreeViewCell.m */,
+				0B4FB5C21CF70B4D00108D20 /* HomeNotifierCell.h */,
+				0B4FB5C31CF70B4D00108D20 /* HomeNotifierCell.m */,
 			);
 			name = "views(首页)";
 			sourceTree = "<group>";
@@ -559,6 +564,7 @@
 				8CBA343D1CF4AC6000A4897A /* RootTabBarViewController.m in Sources */,
 				8CBA34341CF4A8A400A4897A /* CitysViewController.m in Sources */,
 				8CBA34221CF498D000A4897A /* MMDrawerBarButtonItem.m in Sources */,
+				0B4FB5C41CF70B4D00108D20 /* HomeNotifierCell.m in Sources */,
 				8CBA342E1CF4A87300A4897A /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -702,6 +708,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PREFIX_HEADER = PeopleOnline/Classes/PrefixHeader.pch;
 				INFOPLIST_FILE = PeopleOnline/Info.plist;
@@ -716,6 +723,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PREFIX_HEADER = PeopleOnline/Classes/PrefixHeader.pch;
 				INFOPLIST_FILE = PeopleOnline/Info.plist;

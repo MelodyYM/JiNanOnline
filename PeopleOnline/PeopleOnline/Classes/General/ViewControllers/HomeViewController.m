@@ -41,6 +41,11 @@ static NSString *identifierThree = @"identifier1";
     [btu setBackgroundImage:[UIImage imageNamed:@"title_more"] forState:UIControlStateNormal];
     [btu addTarget:self action:@selector(leftDrawerButtonPress:) forControlEvents:UIControlEventTouchUpInside];
     MMDrawerBarButtonItem *back = [[MMDrawerBarButtonItem alloc]initWithCustomView:btu];
+<<<<<<< HEAD
+=======
+//    self.navigationItem.leftBarButtonItem=back;
+
+>>>>>>> b2867bfe034248d9149980fe0f1a4403f5ea26cb
     [self.navigationItem setLeftBarButtonItem:back animated:YES];
     
     
@@ -69,8 +74,9 @@ static NSString *identifierThree = @"identifier1";
 // 添加tablView
 -(void)initTableView{
     
-  UITableView* tableView =[[UITableView alloc]initWithFrame: CGRectMake(0, 0, kScreenWidth, kScreenHeight) style:UITableViewStylePlain];
-    
+  UITableView* tableView =[[UITableView alloc]initWithFrame: CGRectMake(0, 0, kScreenWidth, kScreenHeight-49) style:UITableViewStyleGrouped];
+    tableView.backgroundColor = [UIColor orangeColor];
+    tableView.bounces = NO;
     // 设置tableView的代理
     tableView.delegate = self;
     tableView.dataSource = self;
@@ -79,6 +85,10 @@ static NSString *identifierThree = @"identifier1";
     
 }
 
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+    
+    return 1;
+}
 
 // 实现tableView的代理方法
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
@@ -101,7 +111,8 @@ static NSString *identifierThree = @"identifier1";
 // 设置cell的高度
 - (CGFloat)tableView:(UITableView *)atableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    return kScreenHeight/3;
+    return (kScreenHeight - 49-64)/3;
+//    return 100;
     
 }
 @end
