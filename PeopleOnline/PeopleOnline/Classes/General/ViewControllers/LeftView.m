@@ -100,9 +100,7 @@
     loginLabel.textColor = [UIColor colorWithRed:0.000 green:0.502 blue:1.000 alpha:1.000];
     [moreView addSubview:loginLabel];
     
-<<<<<<< HEAD
-    //UIImageView *logImageView = [UIImageView alloc]initWithImage:[UIImage imageNamed:]
-=======
+
     UIButton *logButton = [UIButton buttonWithType:UIButtonTypeSystem];
     logButton.frame = CGRectMake(leftViewW - 80, 10, 60, 40);
     logButton.backgroundColor = [UIColor colorWithRed:0.000 green:0.502 blue:1.000 alpha:1.000];
@@ -112,7 +110,7 @@
     logButton.layer.masksToBounds = YES;
     logButton.layer.cornerRadius = 5;
     [moreView addSubview:logButton];
->>>>>>> 62f9facdb4b3099e2a9ae9541270d7dbf6ee7cf9
+
     
     UIButton *personButton = [UIButton buttonWithType:UIButtonTypeCustom];
     personButton.frame = CGRectMake(0, CGRectGetMaxY(lineView1.frame), leftViewW, 60);

@@ -24,7 +24,7 @@
 - (void)allViews{
     
     self.imgView =[[UIImageView alloc]initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight)];
-    self.imgView.backgroundColor = [UIColor greenColor];
+    //self.imgView.backgroundColor = [UIColor greenColor];
     [self.contentView addSubview:_imgView];
     
     self.label = [[UILabel alloc]initWithFrame:CGRectMake(0, 3, kScreenWidth, 50)];
