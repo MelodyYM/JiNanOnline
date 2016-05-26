@@ -29,7 +29,7 @@
     self.backgroundColor = [UIColor whiteColor];
     
     CGFloat leftViewW = self.frame.size.width-90;
-    CGFloat leftViewH = self.frame.size.height;
+//    CGFloat leftViewH = self.frame.size.height;
     
     UIView *bgView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, leftViewW-5, 64)];
     bgView.layer.masksToBounds = YES;

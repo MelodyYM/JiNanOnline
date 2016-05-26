@@ -28,12 +28,10 @@
 		8CBA340F1CF48D0B00A4897A /* huand1.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CBA340B1CF48D0B00A4897A /* huand1.png */; };
 		8CBA34101CF48D0B00A4897A /* huand2.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CBA340C1CF48D0B00A4897A /* huand2.png */; };
 		8CBA34111CF48D0B00A4897A /* huand3.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CBA340D1CF48D0B00A4897A /* huand3.png */; };
-		8CBA34171CF491A500A4897A /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CBA34161CF491A500A4897A /* MainViewController.m */; };
 		8CBA34221CF498D000A4897A /* MMDrawerBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CBA341A1CF498D000A4897A /* MMDrawerBarButtonItem.m */; };
 		8CBA34231CF498D000A4897A /* MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CBA341D1CF498D000A4897A /* MMDrawerController.m */; };
 		8CBA34241CF498D000A4897A /* MMDrawerVisualState.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CBA341F1CF498D000A4897A /* MMDrawerVisualState.m */; };
 		8CBA34251CF498D000A4897A /* UIViewController+MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CBA34211CF498D000A4897A /* UIViewController+MMDrawerController.m */; };
-		8CBA34281CF499B400A4897A /* CenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CBA34271CF499B400A4897A /* CenterViewController.m */; };
 		8CBA342B1CF499BC00A4897A /* LeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CBA342A1CF499BC00A4897A /* LeftViewController.m */; };
 		8CBA342E1CF4A87300A4897A /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CBA342D1CF4A87300A4897A /* HomeViewController.m */; };
 		8CBA34311CF4A87C00A4897A /* MyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CBA34301CF4A87C00A4897A /* MyViewController.m */; };
@@ -102,8 +100,6 @@
 		8CBA340B1CF48D0B00A4897A /* huand1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = huand1.png; sourceTree = "<group>"; };
 		8CBA340C1CF48D0B00A4897A /* huand2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = huand2.png; sourceTree = "<group>"; };
 		8CBA340D1CF48D0B00A4897A /* huand3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = huand3.png; sourceTree = "<group>"; };
-		8CBA34151CF491A500A4897A /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
-		8CBA34161CF491A500A4897A /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		8CBA34191CF498D000A4897A /* MMDrawerBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerBarButtonItem.h; sourceTree = "<group>"; };
 		8CBA341A1CF498D000A4897A /* MMDrawerBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerBarButtonItem.m; sourceTree = "<group>"; };
 		8CBA341B1CF498D000A4897A /* MMDrawerController+Subclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MMDrawerController+Subclass.h"; sourceTree = "<group>"; };
@@ -113,8 +109,6 @@
 		8CBA341F1CF498D000A4897A /* MMDrawerVisualState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerVisualState.m; sourceTree = "<group>"; };
 		8CBA34201CF498D000A4897A /* UIViewController+MMDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MMDrawerController.h"; sourceTree = "<group>"; };
 		8CBA34211CF498D000A4897A /* UIViewController+MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MMDrawerController.m"; sourceTree = "<group>"; };
-		8CBA34261CF499B400A4897A /* CenterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CenterViewController.h; sourceTree = "<group>"; };
-		8CBA34271CF499B400A4897A /* CenterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CenterViewController.m; sourceTree = "<group>"; };
 		8CBA34291CF499BC00A4897A /* LeftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftViewController.h; sourceTree = "<group>"; };
 		8CBA342A1CF499BC00A4897A /* LeftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftViewController.m; sourceTree = "<group>"; };
 		8CBA342C1CF4A87300A4897A /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
@@ -420,10 +414,6 @@
 			children = (
 				0B06645A1CF73ED80084B3E3 /* viewControllers(便民服务) */,
 				0BFD25001CF5DA3A00142882 /* ViewControllers(首页) */,
-				8CBA34151CF491A500A4897A /* MainViewController.h */,
-				8CBA34161CF491A500A4897A /* MainViewController.m */,
-				8CBA34261CF499B400A4897A /* CenterViewController.h */,
-				8CBA34271CF499B400A4897A /* CenterViewController.m */,
 				8CBA342F1CF4A87C00A4897A /* MyViewController.h */,
 				8CBA34301CF4A87C00A4897A /* MyViewController.m */,
 				8CBA34321CF4A8A400A4897A /* CitysViewController.h */,
@@ -590,12 +580,14 @@
 				8C3891991CF5BD1F003ECB4D /* AppDelegate.m in Sources */,
 				0BFD25461CF5E88600142882 /* HomeThreeViewCell.m in Sources */,
 				8CBA34091CF47F4600A4897A /* UIView+Extension.m in Sources */,
+<<<<<<< HEAD
 				0B06645E1CF73F590084B3E3 /* bigViewCell.m in Sources */,
 				8CBA34171CF491A500A4897A /* MainViewController.m in Sources */,
+=======
+>>>>>>> 9e0dd4f8348bdb3f51bdbef2097766f50035fcd5
 				8CBA34231CF498D000A4897A /* MMDrawerController.m in Sources */,
 				8C38919E1CF5BE6D003ECB4D /* LeftView.m in Sources */,
 				8CBA34251CF498D000A4897A /* UIViewController+MMDrawerController.m in Sources */,
-				8CBA34281CF499B400A4897A /* CenterViewController.m in Sources */,
 				8CBA343A1CF4A92800A4897A /* ServiceViewController.m in Sources */,
 				8CBA34241CF498D000A4897A /* MMDrawerVisualState.m in Sources */,
 				8CBA34311CF4A87C00A4897A /* MyViewController.m in Sources */,
