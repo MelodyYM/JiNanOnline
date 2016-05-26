@@ -40,12 +40,9 @@ static NSString *identifierThree = @"identifier1";
     btu.frame = CGRectMake(20 ,6 ,50 , 30);
     [btu setBackgroundImage:[UIImage imageNamed:@"title_more"] forState:UIControlStateNormal];
     [btu addTarget:self action:@selector(leftDrawerButtonPress:) forControlEvents:UIControlEventTouchUpInside];
-    //    btu.backgroundColor=[UIColor redColor];
     MMDrawerBarButtonItem *back = [[MMDrawerBarButtonItem alloc]initWithCustomView:btu];
-//    self.navigationItem.leftBarButtonItem=back;
-    
-    
     [self.navigationItem setLeftBarButtonItem:back animated:YES];
+    
     
     [self initTableView];
     
@@ -61,7 +58,14 @@ static NSString *identifierThree = @"identifier1";
 {
     //开关左抽屉
     [self.mm_drawerController toggleDrawerSide:MMDrawerSideLeft animated:YES completion:nil];
+    
+    
+//    [NSNotificationCenter de]
+    
+    
 }
+
+
 // 添加tablView
 -(void)initTableView{
     

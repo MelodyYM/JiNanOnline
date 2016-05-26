@@ -20,9 +20,9 @@
 #import "LaunchViewController.h"
 #import "LaunchView.h"
 
-#import "MainViewController.h"
+
 #import "LeftViewController.h"
-#import "CenterViewController.h"
+
 
 #import "HomeViewController.h"
 #import "MyViewController.h"
