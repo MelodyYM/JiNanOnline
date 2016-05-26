@@ -57,7 +57,7 @@
     loginView.backgroundColor = [UIColor redColor];
     [self addSubview:loginView];
     
-    UIImageView *logImageView = [UIImageView alloc]initWithImage:[UIImage imageNamed:]
+    //UIImageView *logImageView = [UIImageView alloc]initWithImage:[UIImage imageNamed:]
     
     
     
