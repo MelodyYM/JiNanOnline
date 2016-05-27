@@ -32,7 +32,30 @@
     [super viewDidLoad];
     
     
+    [_leftView.loginButton addTarget:self action:@selector(leftLoginButtonAction:) forControlEvents:UIControlEventTouchUpInside];
+    
+    
 }
+
+/**
+ *  登录按钮事件
+ *
+ *  @param sender 传入的UIButton
+ */
+-(void)leftLoginButtonAction:(UIButton *)sender{
+    
+    LoginViewController *loginVC = [LoginViewController new];
+    UINavigationController *loginNC = [[UINavigationController alloc]initWithRootViewController:loginVC];
+    //开关左抽屉
+    [self.mm_drawerController toggleDrawerSide:MMDrawerSideLeft animated:YES completion:nil];
+    [self presentViewController:loginNC animated:YES completion:^{
+        
+    }];
+    
+}
+
+
+
 
 
 

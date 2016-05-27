@@ -10,9 +10,7 @@
 
 @interface LeftView : UIView
 
-
-
-
+@property(nonatomic,weak)UIButton *loginButton;
 
 
 @end

@@ -10,6 +10,8 @@
 #define PrefixHeader_pch
 
 
+
+
 #define kScreenWidth [UIScreen mainScreen].bounds.size.width
 #define kScreenHeight [UIScreen mainScreen].bounds.size.height
 
@@ -31,6 +33,9 @@
 #import "ServiceViewController.h"
 
 #import "RootTabBarViewController.h"
+
+#import "LoginViewController.h"
+#import "RegisterViewController.h"
 
 //*********************视图********************************
 

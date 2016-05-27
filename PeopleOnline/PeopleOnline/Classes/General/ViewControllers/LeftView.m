@@ -8,6 +8,13 @@
 
 #import "LeftView.h"
 
+@interface LeftView ()<UITextFieldDelegate>
+
+
+
+@end
+
+
 @implementation LeftView
 
 #pragma mark - 初始化
@@ -61,18 +68,33 @@
     
     
     UITextField *searTextField = [[UITextField alloc]initWithFrame:CGRectMake(5, 10, leftViewW-10, 40)];
-//    searTextField.background = [UIImage imageNamed:@"soubg.9"];
-
     searTextField.backgroundColor = [UIColor blackColor];
     
-    UIImageView *searImage =[[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 40, 40)];
-    
-    searImage.backgroundColor = [UIColor redColor];
-    
-    UIView *bg = [[UIView alloc]init];
-    bg.backgroundColor = [UIColor whiteColor];
-    searTextField.leftView = bg;
     searTextField.tintColor = [UIColor whiteColor];
+   
+    
+    
+    UIButton *leftView = [UIButton buttonWithType:UIButtonTypeSystem];
+    leftView.width = 40;
+    leftView.height = 40;
+//    leftView.backgroundColor = [UIColor colorWithRed:0.400 green:0.800 blue:1.000 alpha:1.000];
+    [leftView setImage:[UIImage imageNamed:@"home_search_bg_h"] forState:UIControlStateNormal];
+//    leftView.enabled = NO;
+    searTextField.leftView = leftView;
+    
+    
+    UIButton *rightView = [UIButton buttonWithType:UIButtonTypeCustom];
+    rightView.width = 40;
+    rightView.height = 40;
+    [rightView setImage:[UIImage imageNamed:@"x2"] forState:UIControlStateNormal];
+//    rightView.backgroundColor = [UIColor orangeColor];
+    searTextField.rightView = rightView;
+    
+    searTextField.leftViewMode = UITextFieldViewModeAlways;
+    searTextField.rightViewMode = UITextFieldViewModeAlways;
+    searTextField.delegate = self;
+    searTextField.layer.masksToBounds = YES;
+    searTextField.layer.cornerRadius = 20;
     
     [searchView addSubview:searTextField];
     
@@ -100,9 +122,9 @@
     loginLabel.textColor = [UIColor colorWithRed:0.000 green:0.502 blue:1.000 alpha:1.000];
     [moreView addSubview:loginLabel];
     
-<<<<<<< HEAD
+
     //UIImageView *logImageView = [UIImageView alloc]initWithImage:[UIImage imageNamed:]
-=======
+
     UIButton *logButton = [UIButton buttonWithType:UIButtonTypeSystem];
     logButton.frame = CGRectMake(leftViewW - 80, 10, 60, 40);
     logButton.backgroundColor = [UIColor colorWithRed:0.000 green:0.502 blue:1.000 alpha:1.000];
@@ -112,8 +134,10 @@
     logButton.layer.masksToBounds = YES;
     logButton.layer.cornerRadius = 5;
     [moreView addSubview:logButton];
->>>>>>> 62f9facdb4b3099e2a9ae9541270d7dbf6ee7cf9
+    _loginButton = logButton;
     
+    
+
     UIButton *personButton = [UIButton buttonWithType:UIButtonTypeCustom];
     personButton.frame = CGRectMake(0, CGRectGetMaxY(lineView1.frame), leftViewW, 60);
     [moreView addSubview:personButton];
@@ -215,7 +239,22 @@
 
     
     
-    }
+}
+
+#pragma mark - 取消键盘的第一响应
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField{
+    
+    return [textField resignFirstResponder];
+}
+
+
+
+
+
+
+
+
 
 
 @end

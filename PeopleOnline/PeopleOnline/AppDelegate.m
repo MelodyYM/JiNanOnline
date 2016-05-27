@@ -42,11 +42,17 @@
         
         drawerController.maximumLeftDrawerWidth = kScreenWidth-90;
         //滑动手势快关抽屉
-        [drawerController setOpenDrawerGestureModeMask:MMOpenDrawerGestureModeAll];
+//        [drawerController setOpenDrawerGestureModeMask:MMOpenDrawerGestureModeAll];
         [drawerController setCloseDrawerGestureModeMask:MMCloseDrawerGestureModeAll];
 
         self.window.rootViewController = drawerController;
     }
+    
+    
+    [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
+    [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:0.475 green:0.718 blue:1.000 alpha:1.000]];
+    
+    [[UINavigationBar appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor whiteColor], NSForegroundColorAttributeName,nil]];
     
     return YES;
 }
