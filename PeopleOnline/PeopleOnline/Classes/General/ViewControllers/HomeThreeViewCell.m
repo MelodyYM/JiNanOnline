@@ -26,27 +26,34 @@
     
     CGFloat cellHeight = self.frame.size.height;
     
+<<<<<<< HEAD
     self.imgButton1 =[UIButton buttonWithType:UIButtonTypeSystem];
     self.imgButton1.frame = CGRectMake(50, (kScreenWidth-64-49)/6, (kScreenWidth-140)/3, 100);
     [self.imgButton1 setImage:[UIImage imageNamed:@""] forState:UIControlStateNormal];
     self.imgButton1.backgroundColor =[UIColor redColor];
+=======
+    self.imgButton1 =[UIButton buttonWithType:UIButtonTypeCustom];
+    self.imgButton1.frame = CGRectMake(50, (kScreenWidth-64-49)/6, (kScreenWidth-140)/3, 100);
+    [self.imgButton1 setImage:[UIImage imageNamed:@"ans1"] forState:UIControlStateNormal];
+
+>>>>>>> 7945f205ca7ee490c57eef3d379b46faf48f0a93
     
     [self.imgButton1 addTarget:self action:@selector(button1Action:) forControlEvents:UIControlEventTouchUpInside];
     
     [self.contentView addSubview:self.imgButton1];
     
-    self.imgButton2 = [UIButton buttonWithType:UIButtonTypeSystem];
-    self.imgButton2.frame = CGRectMake(130, 50, 80, 100);
-    [self.imgButton2 setImage:[UIImage imageNamed:@""] forState:UIControlStateNormal];
+    self.imgButton2 = [UIButton buttonWithType:UIButtonTypeCustom];
+    self.imgButton2.frame = CGRectMake(70+(kScreenWidth-140)/3,(kScreenWidth-64-49)/6, (kScreenWidth-140)/3, 100);
+    [self.imgButton2 setImage:[UIImage imageNamed:@"ans2"] forState:UIControlStateNormal];
     [self.imgButton2 addTarget:self action:@selector(button2Action:) forControlEvents:UIControlEventTouchUpInside];
-    self.imgButton2.backgroundColor =[UIColor grayColor];
+    
     [self.contentView addSubview:self.imgButton2];
     
-    self.imgButton3 = [UIButton buttonWithType:UIButtonTypeSystem];
-    self.imgButton3.frame = CGRectMake(230, 50, 80, 100);
-    [self.imgButton3 setImage:[UIImage imageNamed:@""] forState:UIControlStateNormal];
+    self.imgButton3 = [UIButton buttonWithType:UIButtonTypeCustom];
+    self.imgButton3.frame = CGRectMake(kScreenWidth - 50 -(kScreenWidth-140)/3,(kScreenWidth-64-49)/6, (kScreenWidth-140)/3, 100);
+    [self.imgButton3 setImage:[UIImage imageNamed:@"ans3"] forState:UIControlStateNormal];
     [self.imgButton3 addTarget:self action:@selector(button3Action:) forControlEvents:UIControlEventTouchUpInside];
-    self.imgButton3.backgroundColor =[UIColor blueColor];
+   // self.imgButton3.backgroundColor =[UIColor blueColor];
     
     [self.contentView addSubview:self.imgButton3];
 

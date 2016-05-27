@@ -9,6 +9,7 @@
 #import "HomeViewController.h"
 #import "HomeViewCell.h"
 #import "HomeThreeViewCell.h"
+#import "HomeNotifierCell.h"
 @interface HomeViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @property(nonatomic,weak)UITableView *tableView;
@@ -18,7 +19,7 @@
 @implementation HomeViewController
 static NSString *identifier = @"identifier";
 static NSString *identifierThree = @"identifier1";
-
+static NSString *identifiernotifier = @"identifier2";
 - (void)viewDidLoad {
     [super viewDidLoad];
 
@@ -49,7 +50,7 @@ static NSString *identifierThree = @"identifier1";
     
     [self.tableView registerClass:[HomeViewCell class] forCellReuseIdentifier:identifier];
     [self.tableView registerClass:[HomeThreeViewCell class] forCellReuseIdentifier:identifierThree];
-    
+    [self.tableView registerClass:[HomeNotifierCell class] forCellReuseIdentifier:identifiernotifier];
 }
 
 
@@ -70,7 +71,11 @@ static NSString *identifierThree = @"identifier1";
 // 添加tablView
 -(void)initTableView{
     
+<<<<<<< HEAD
   UITableView *tableView = [[UITableView alloc]initWithFrame: CGRectMake(0, 0, kScreenWidth, kScreenHeight-49) style:UITableViewStylePlain];
+=======
+  UITableView* tableView =[[UITableView alloc]initWithFrame: CGRectMake(0, 0, kScreenWidth, kScreenHeight-49) style:UITableViewStylePlain];
+>>>>>>> 7945f205ca7ee490c57eef3d379b46faf48f0a93
     tableView.backgroundColor = [UIColor orangeColor];
     tableView.bounces = NO;
     // 设置tableView的代理
@@ -81,10 +86,6 @@ static NSString *identifierThree = @"identifier1";
     
 }
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
-    
-    return 1;
-}
 
 // 实现tableView的代理方法
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
@@ -93,18 +94,55 @@ static NSString *identifierThree = @"identifier1";
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+<<<<<<< HEAD
     
     HomeThreeViewCell *cell =[tableView dequeueReusableCellWithIdentifier:identifierThree];
         return  cell;
     
+=======
+    UITableViewCell *cell = nil;
+    
+    if (indexPath.row == 0) {
+        cell =[tableView dequeueReusableCellWithIdentifier:identifier];
+        
+    }else if (indexPath.row == 1){
+        cell =[tableView dequeueReusableCellWithIdentifier:identifiernotifier];
+       
+       
+    }else{
+    cell =[tableView dequeueReusableCellWithIdentifier:identifierThree];
+       
+    }
+    //cell.selectionStyle = UITableViewCellSelectionStyleNone;
+>>>>>>> 7945f205ca7ee490c57eef3d379b46faf48f0a93
     return cell;
+   
     
 }
 // 设置cell的高度
 - (CGFloat)tableView:(UITableView *)atableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     
     return (kScreenHeight - 49-64)/3;
-//    return 100;
     
 }
+// 实现cell的跳转事件
+-  (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    if (indexPath.row ==0) {
+        
+    }else if (indexPath.row ==1){
+        
+    }else{
+        
+    }
+    
+}
+
+
+
+
+
+
+
+
+
 @end

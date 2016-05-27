@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B06645E1CF73F590084B3E3 /* bigViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B06645D1CF73F590084B3E3 /* bigViewCell.m */; };
+		0B0664611CF73F7A0084B3E3 /* ListViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B0664601CF73F7A0084B3E3 /* ListViewCell.m */; };
+		0B0664641CF747AB0084B3E3 /* JuJiaoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B0664631CF747AB0084B3E3 /* JuJiaoViewController.m */; };
 		0B4FB5C41CF70B4D00108D20 /* HomeNotifierCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B4FB5C31CF70B4D00108D20 /* HomeNotifierCell.m */; };
 		0BFD25431CF5DB7600142882 /* HomeViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BFD25421CF5DB7600142882 /* HomeViewCell.m */; };
 		0BFD25461CF5E88600142882 /* HomeThreeViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BFD25451CF5E88600142882 /* HomeThreeViewCell.m */; };
@@ -59,6 +62,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B06645C1CF73F590084B3E3 /* bigViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bigViewCell.h; sourceTree = "<group>"; };
+		0B06645D1CF73F590084B3E3 /* bigViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = bigViewCell.m; sourceTree = "<group>"; };
+		0B06645F1CF73F7A0084B3E3 /* ListViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListViewCell.h; sourceTree = "<group>"; };
+		0B0664601CF73F7A0084B3E3 /* ListViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListViewCell.m; sourceTree = "<group>"; };
+		0B0664621CF747AB0084B3E3 /* JuJiaoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuJiaoViewController.h; sourceTree = "<group>"; };
+		0B0664631CF747AB0084B3E3 /* JuJiaoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JuJiaoViewController.m; sourceTree = "<group>"; };
 		0B4FB5C21CF70B4D00108D20 /* HomeNotifierCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeNotifierCell.h; sourceTree = "<group>"; };
 		0B4FB5C31CF70B4D00108D20 /* HomeNotifierCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeNotifierCell.m; sourceTree = "<group>"; };
 		0BFD25411CF5DB7600142882 /* HomeViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewCell.h; sourceTree = "<group>"; };
@@ -150,6 +159,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B06645A1CF73ED80084B3E3 /* viewControllers(便民服务) */ = {
+			isa = PBXGroup;
+			children = (
+				0B06645B1CF73F320084B3E3 /* views */,
+				8CBA34381CF4A92800A4897A /* ServiceViewController.h */,
+				8CBA34391CF4A92800A4897A /* ServiceViewController.m */,
+				0B0664621CF747AB0084B3E3 /* JuJiaoViewController.h */,
+				0B0664631CF747AB0084B3E3 /* JuJiaoViewController.m */,
+			);
+			name = "viewControllers(便民服务)";
+			sourceTree = "<group>";
+		};
+		0B06645B1CF73F320084B3E3 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				0B06645C1CF73F590084B3E3 /* bigViewCell.h */,
+				0B06645D1CF73F590084B3E3 /* bigViewCell.m */,
+				0B06645F1CF73F7A0084B3E3 /* ListViewCell.h */,
+				0B0664601CF73F7A0084B3E3 /* ListViewCell.m */,
+			);
+			name = views;
+			sourceTree = "<group>";
+		};
 		0BFD25001CF5DA3A00142882 /* ViewControllers(首页) */ = {
 			isa = PBXGroup;
 			children = (
@@ -395,6 +427,7 @@
 		8CBA34141CF4916200A4897A /* ViewController(主页) */ = {
 			isa = PBXGroup;
 			children = (
+				0B06645A1CF73ED80084B3E3 /* viewControllers(便民服务) */,
 				0BFD25001CF5DA3A00142882 /* ViewControllers(首页) */,
 				8CBA342F1CF4A87C00A4897A /* MyViewController.h */,
 				8CBA34301CF4A87C00A4897A /* MyViewController.m */,
@@ -402,8 +435,6 @@
 				8CBA34331CF4A8A400A4897A /* CitysViewController.m */,
 				8CBA34351CF4A90A00A4897A /* BGTViewController.h */,
 				8CBA34361CF4A90A00A4897A /* BGTViewController.m */,
-				8CBA34381CF4A92800A4897A /* ServiceViewController.h */,
-				8CBA34391CF4A92800A4897A /* ServiceViewController.m */,
 				8CBA343B1CF4AC6000A4897A /* RootTabBarViewController.h */,
 				8CBA343C1CF4AC6000A4897A /* RootTabBarViewController.m */,
 			);
@@ -565,18 +596,25 @@
 				8C3891991CF5BD1F003ECB4D /* AppDelegate.m in Sources */,
 				0BFD25461CF5E88600142882 /* HomeThreeViewCell.m in Sources */,
 				8CBA34091CF47F4600A4897A /* UIView+Extension.m in Sources */,
+<<<<<<< HEAD
+				0B06645E1CF73F590084B3E3 /* bigViewCell.m in Sources */,
+				8CBA34171CF491A500A4897A /* MainViewController.m in Sources */,
+=======
+>>>>>>> 9e0dd4f8348bdb3f51bdbef2097766f50035fcd5
 				8CBA34231CF498D000A4897A /* MMDrawerController.m in Sources */,
 				8C38919E1CF5BE6D003ECB4D /* LeftView.m in Sources */,
 				8CBA34251CF498D000A4897A /* UIViewController+MMDrawerController.m in Sources */,
 				8CBA343A1CF4A92800A4897A /* ServiceViewController.m in Sources */,
 				8CBA34241CF498D000A4897A /* MMDrawerVisualState.m in Sources */,
 				8CBA34311CF4A87C00A4897A /* MyViewController.m in Sources */,
+				0B0664641CF747AB0084B3E3 /* JuJiaoViewController.m in Sources */,
 				8CBA33FC1CF4739B00A4897A /* LaunchView.m in Sources */,
 				8CBA33B71CF4705E00A4897A /* main.m in Sources */,
 				8CC7ACC21CF7402B00960319 /* RegisterViewController.m in Sources */,
 				8CC7ACBF1CF72CEF00960319 /* LoginViewController.m in Sources */,
 				8CBA34371CF4A90A00A4897A /* BGTViewController.m in Sources */,
 				0BFD25431CF5DB7600142882 /* HomeViewCell.m in Sources */,
+				0B0664611CF73F7A0084B3E3 /* ListViewCell.m in Sources */,
 				8CBA342B1CF499BC00A4897A /* LeftViewController.m in Sources */,
 				8CBA33F91CF472A200A4897A /* LaunchViewController.m in Sources */,
 				8CBA343D1CF4AC6000A4897A /* RootTabBarViewController.m in Sources */,

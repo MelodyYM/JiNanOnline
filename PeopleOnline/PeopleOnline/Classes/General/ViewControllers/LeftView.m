@@ -123,8 +123,11 @@
     [moreView addSubview:loginLabel];
     
 
+<<<<<<< HEAD
     //UIImageView *logImageView = [UIImageView alloc]initWithImage:[UIImage imageNamed:]
 
+=======
+>>>>>>> 7945f205ca7ee490c57eef3d379b46faf48f0a93
     UIButton *logButton = [UIButton buttonWithType:UIButtonTypeSystem];
     logButton.frame = CGRectMake(leftViewW - 80, 10, 60, 40);
     logButton.backgroundColor = [UIColor colorWithRed:0.000 green:0.502 blue:1.000 alpha:1.000];
@@ -134,8 +137,12 @@
     logButton.layer.masksToBounds = YES;
     logButton.layer.cornerRadius = 5;
     [moreView addSubview:logButton];
+<<<<<<< HEAD
     _loginButton = logButton;
     
+=======
+
+>>>>>>> 7945f205ca7ee490c57eef3d379b46faf48f0a93
     
 
     UIButton *personButton = [UIButton buttonWithType:UIButtonTypeCustom];

@@ -15,5 +15,6 @@
 @property(nonatomic,strong)UILabel *dataLabel;
 @property(nonatomic,strong)UIButton *textButton;
 
+@property(nonatomic,strong)UIButton *moreButton;
 
 @end
