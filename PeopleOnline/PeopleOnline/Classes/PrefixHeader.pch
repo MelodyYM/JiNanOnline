@@ -37,6 +37,13 @@
 #import "LoginViewController.h"
 #import "RegisterViewController.h"
 
+#import "PersonViewController.h"
+
+#import "JianYIViewController.h"
+#import "UpdateViewController.h"
+#import "AboutViewController.h"
+#import "PersonInfoViewController.h"
+
 //*********************视图********************************
 
 

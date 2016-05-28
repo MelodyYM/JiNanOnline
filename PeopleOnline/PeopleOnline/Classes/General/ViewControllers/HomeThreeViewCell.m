@@ -26,17 +26,10 @@
     
     CGFloat cellHeight = self.frame.size.height;
     
-<<<<<<< HEAD
-    self.imgButton1 =[UIButton buttonWithType:UIButtonTypeSystem];
-    self.imgButton1.frame = CGRectMake(50, (kScreenWidth-64-49)/6, (kScreenWidth-140)/3, 100);
-    [self.imgButton1 setImage:[UIImage imageNamed:@""] forState:UIControlStateNormal];
-    self.imgButton1.backgroundColor =[UIColor redColor];
-=======
     self.imgButton1 =[UIButton buttonWithType:UIButtonTypeCustom];
     self.imgButton1.frame = CGRectMake(50, (kScreenWidth-64-49)/6, (kScreenWidth-140)/3, 100);
     [self.imgButton1 setImage:[UIImage imageNamed:@"ans1"] forState:UIControlStateNormal];
 
->>>>>>> 7945f205ca7ee490c57eef3d379b46faf48f0a93
     
     [self.imgButton1 addTarget:self action:@selector(button1Action:) forControlEvents:UIControlEventTouchUpInside];
     

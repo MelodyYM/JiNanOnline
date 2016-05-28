@@ -36,7 +36,7 @@
     self.headLabel =[[UILabel alloc]initWithFrame:CGRectMake(0, 110, kScreenWidth, 30)];
     self.headLabel.text = @"新闻标题";
     self.headLabel.font =[UIFont boldSystemFontOfSize:20];
-    self.headLabel.textAlignment =UITextAlignmentCenter;
+    self.headLabel.textAlignment = NSTextAlignmentCenter;
     [self.contentView addSubview:self.headLabel];
     
     

@@ -71,11 +71,9 @@ static NSString *identifiernotifier = @"identifier2";
 // 添加tablView
 -(void)initTableView{
     
-<<<<<<< HEAD
-  UITableView *tableView = [[UITableView alloc]initWithFrame: CGRectMake(0, 0, kScreenWidth, kScreenHeight-49) style:UITableViewStylePlain];
-=======
+
   UITableView* tableView =[[UITableView alloc]initWithFrame: CGRectMake(0, 0, kScreenWidth, kScreenHeight-49) style:UITableViewStylePlain];
->>>>>>> 7945f205ca7ee490c57eef3d379b46faf48f0a93
+
     tableView.backgroundColor = [UIColor orangeColor];
     tableView.bounces = NO;
     // 设置tableView的代理
@@ -94,12 +92,7 @@ static NSString *identifiernotifier = @"identifier2";
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-<<<<<<< HEAD
-    
-    HomeThreeViewCell *cell =[tableView dequeueReusableCellWithIdentifier:identifierThree];
-        return  cell;
-    
-=======
+
     UITableViewCell *cell = nil;
     
     if (indexPath.row == 0) {
@@ -114,7 +107,7 @@ static NSString *identifiernotifier = @"identifier2";
        
     }
     //cell.selectionStyle = UITableViewCellSelectionStyleNone;
->>>>>>> 7945f205ca7ee490c57eef3d379b46faf48f0a93
+
     return cell;
    
     

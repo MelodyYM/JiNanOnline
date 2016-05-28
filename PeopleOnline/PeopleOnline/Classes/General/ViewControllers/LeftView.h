@@ -13,4 +13,14 @@
 @property(nonatomic,weak)UIButton *loginButton;
 
 
+@property(nonatomic,weak)UIButton *perButton;
+
+
+@property(nonatomic,weak)UIButton *jianyiButton;
+
+@property(nonatomic,weak)UIButton *upButton;
+
+@property(nonatomic,weak)UIButton *aboutButton;
+
+
 @end

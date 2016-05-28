@@ -48,7 +48,7 @@
     UILabel *serviceLable = [[UILabel alloc]initWithFrame:CGRectMake(20, 20, 150, 44)];
 //    serviceLable.backgroundColor = [UIColor redColor];
     serviceLable.text = @"市民服务热线";
-    serviceLable.font = [UIFont boldSystemFontOfSize:20];
+    serviceLable.font = [UIFont boldSystemFontOfSize:18];
     serviceLable.textColor = [UIColor whiteColor];
     [bgView addSubview:serviceLable];
     
@@ -56,7 +56,7 @@
     UILabel *cityLable = [[UILabel alloc]initWithFrame:CGRectMake(bgView.frame.size.width-60, 20, 60, 44)];
     cityLable.text = @"济南";
     cityLable.textColor = [UIColor whiteColor];
-    cityLable.font = [UIFont boldSystemFontOfSize:20];
+    cityLable.font = [UIFont boldSystemFontOfSize:18];
 //    cityLable.backgroundColor = [UIColor redColor];
     [bgView addSubview:cityLable];
     
@@ -118,16 +118,13 @@
     
     UILabel *loginLabel = [[UILabel alloc]initWithFrame:CGRectMake(CGRectGetMaxX(loginImageView.frame)+10, 10, 70, 40)];
     loginLabel.text = @"未登录";
-    loginLabel.font = [UIFont boldSystemFontOfSize:20];
+    loginLabel.font = [UIFont boldSystemFontOfSize:18];
     loginLabel.textColor = [UIColor colorWithRed:0.000 green:0.502 blue:1.000 alpha:1.000];
     [moreView addSubview:loginLabel];
     
 
-<<<<<<< HEAD
     //UIImageView *logImageView = [UIImageView alloc]initWithImage:[UIImage imageNamed:]
 
-=======
->>>>>>> 7945f205ca7ee490c57eef3d379b46faf48f0a93
     UIButton *logButton = [UIButton buttonWithType:UIButtonTypeSystem];
     logButton.frame = CGRectMake(leftViewW - 80, 10, 60, 40);
     logButton.backgroundColor = [UIColor colorWithRed:0.000 green:0.502 blue:1.000 alpha:1.000];
@@ -137,17 +134,15 @@
     logButton.layer.masksToBounds = YES;
     logButton.layer.cornerRadius = 5;
     [moreView addSubview:logButton];
-<<<<<<< HEAD
-    _loginButton = logButton;
-    
-=======
 
->>>>>>> 7945f205ca7ee490c57eef3d379b46faf48f0a93
+    _loginButton = logButton;
+
     
 
     UIButton *personButton = [UIButton buttonWithType:UIButtonTypeCustom];
     personButton.frame = CGRectMake(0, CGRectGetMaxY(lineView1.frame), leftViewW, 60);
     [moreView addSubview:personButton];
+    _perButton = personButton;
     
     UIImageView *perImageView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"gerenzx"]];
     perImageView.frame = CGRectMake(15, 10, 40, 40);
@@ -156,7 +151,7 @@
     UILabel *perLabel = [[UILabel alloc]initWithFrame:CGRectMake(CGRectGetMaxX(perImageView.frame)+10, 10, 90, 40)];
     perLabel.textColor = [UIColor colorWithRed:0.000 green:0.502 blue:1.000 alpha:1.000];
     perLabel.text = @"个人中心";
-    perLabel.font = [UIFont boldSystemFontOfSize:20];
+    perLabel.font = [UIFont boldSystemFontOfSize:18];
     [personButton addSubview:perLabel];
     
     UIImageView *arwImageView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"mm_submenu_normal"]];
@@ -170,7 +165,7 @@
     UIButton *yijianButton = [UIButton buttonWithType:UIButtonTypeCustom];
     yijianButton.frame = CGRectMake(0, CGRectGetMaxY(lineView2.frame), leftViewW, 60);
     [moreView addSubview:yijianButton];
-    
+    _jianyiButton = yijianButton;
     
     UIImageView *yijianImageView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"yijianfk"]];
     yijianImageView.frame = CGRectMake(15, 10, 40, 40);
@@ -180,7 +175,7 @@
     UILabel *yijianLabel = [[UILabel alloc]initWithFrame:CGRectMake(CGRectGetMaxX(yijianImageView.frame)+10, 10, 90, 40)];
     yijianLabel.text = @"意见反馈";
     yijianLabel.textColor = [UIColor colorWithRed:0.000 green:0.502 blue:1.000 alpha:1.000];
-    yijianLabel.font = [UIFont boldSystemFontOfSize:20];
+    yijianLabel.font = [UIFont boldSystemFontOfSize:18];
     [yijianButton addSubview:yijianLabel];
     
     UIImageView *arwImageView1 = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"mm_submenu_normal"]];
@@ -196,7 +191,7 @@
     UIButton *upButton = [UIButton buttonWithType:UIButtonTypeCustom];
     upButton.frame = CGRectMake(0, CGRectGetMaxY(lineView3.frame), leftViewW, 60);
     [moreView addSubview:upButton];
-    
+    _upButton = upButton;
     
     UIImageView *upImageView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"gxsj"]];
     upImageView.frame = CGRectMake(15, 10, 40, 40);
@@ -206,7 +201,7 @@
     UILabel *upLabel = [[UILabel alloc]initWithFrame:CGRectMake(CGRectGetMaxX(upImageView.frame)+10, 10, 90, 40)];
     upLabel.text = @"更新升级";
     upLabel.textColor = [UIColor colorWithRed:0.000 green:0.502 blue:1.000 alpha:1.000];
-    upLabel.font = [UIFont boldSystemFontOfSize:20];
+    upLabel.font = [UIFont boldSystemFontOfSize:18];
     [upButton addSubview:upLabel];
     
     UIImageView *arwImageView2 = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"mm_submenu_normal"]];
@@ -223,6 +218,7 @@
     UIButton *aboutButton = [UIButton buttonWithType:UIButtonTypeCustom];
     aboutButton.frame = CGRectMake(0, CGRectGetMaxY(lineView4.frame), leftViewW, 60);
     [moreView addSubview:aboutButton];
+    _aboutButton = aboutButton;
     
     UIImageView *aboutImageView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"gy"]];
     aboutImageView.frame = CGRectMake(15, 10, 40, 40);
@@ -232,7 +228,7 @@
     UILabel *aboutLabel = [[UILabel alloc]initWithFrame:CGRectMake(CGRectGetMaxY(aboutImageView.frame)+15, 10, 90, 40)];
     aboutLabel.textColor = [UIColor colorWithRed:0.000 green:0.502 blue:1.000 alpha:1.000];
     aboutLabel.text = @"关于";
-    aboutLabel.font = [UIFont boldSystemFontOfSize:20];
+    aboutLabel.font = [UIFont boldSystemFontOfSize:18];
     [aboutButton addSubview:aboutLabel];
     
     UIImageView *arwImageView3 = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"mm_submenu_normal"]];
